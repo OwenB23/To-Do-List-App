@@ -146,7 +146,7 @@ ul li.checked {
 }
 
 ul li.checked::before {
-  background-image: url(images/checkmark-outline.svg);
+  background-image: url(Images/checkmark-outline.svg);
   background-color: #40c9ff;
 }
 
