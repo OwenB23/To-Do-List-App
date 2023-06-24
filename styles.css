@@ -128,7 +128,7 @@ ul li {
 }
 
 ul li:hover {
-  text-decoration: line-through;
+  text-decoration: none;
 }
 
 ul li::before {

@@ -6,7 +6,22 @@ function displayDateTime() {
 
   // Date Components
   const year = now.getFullYear();
-  const month = now.getMonth() + 1;
+  const month = now.getMonth();
+
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
   const day = now.getDate();
 
   // Time Components
@@ -21,7 +36,7 @@ function displayDateTime() {
 
   // Display the date and time in the HTML with id 'currentTime'
   const dateElement = document.querySelector("#currentTime .date");
-  dateElement.textContent = `${month}-${day}, ${year}`;
+  dateElement.textContent = `${monthNames[month]}-${day}-${year}`;
 
   const timeElement = document.querySelector("#currentTime .time");
   timeElement.textContent = timeString;
